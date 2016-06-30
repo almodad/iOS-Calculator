@@ -8,7 +8,34 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+typedef enum{Divide, Multiply, Add, Subtract} CalculatorOptions;
+
+@interface ViewController : UIViewController{
+
+    IBOutlet UITextField *txtDisplay;
+    NSString *storage;
+    CalculatorOptions option;
+}
+- (IBAction)btnZero;
+- (IBAction)btnOne;
+- (IBAction)btnTwo;
+- (IBAction)btnThree;
+- (IBAction)btnFour;
+- (IBAction)btnFive;
+- (IBAction)btnSix;
+- (IBAction)btnSeven;
+- (IBAction)btnEight;
+- (IBAction)btnNine;
+
+
+- (IBAction)btnDivide;
+- (IBAction)btnMultiply;
+- (IBAction)btnAdd;
+- (IBAction)btnSubtract;
+- (IBAction)btnEquals;
+- (IBAction)btnDecimal;
+- (IBAction)btnClear;
+- (IBAction)btnClearExisting;
 
 
 @end
