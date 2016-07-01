@@ -90,16 +90,16 @@
     NSString *val = txtDisplay.text;
     switch(option) {
         case Divide:
-            txtDisplay.text= [NSString stringWithFormat:@"%.2f",[storage floatValue]/[val floatValue]];
+            txtDisplay.text= [NSString stringWithFormat:@"%.1f",[storage floatValue]/[val floatValue]];
             break;
         case Multiply:
-            txtDisplay.text= [NSString stringWithFormat:@"%.2f",[val floatValue]*[storage floatValue]];
+            txtDisplay.text= [NSString stringWithFormat:@"%.1f",[val floatValue]*[storage floatValue]];
             break;
         case Add:
-            txtDisplay.text= [NSString stringWithFormat:@"%.2f",[val floatValue]+[storage floatValue]];
+            txtDisplay.text= [NSString stringWithFormat:@"%.1f",[val floatValue]+[storage floatValue]];
             break;
         case Subtract:
-            txtDisplay.text= [NSString stringWithFormat:@"%.2f",[storage floatValue]-[val floatValue]];
+            txtDisplay.text= [NSString stringWithFormat:@"%.1f",[storage floatValue]-[val floatValue]];
             break;    }
 }
 
